@@ -37,11 +37,17 @@
     font-family: monospace;
     z-index: 1;
     position: absolute;
-    top: 0;
+    top: 5rem;
     right: 0;
     margin: 12px;
     border-radius: 4px;
     width: 20rem;
+}
+
+@media screen and (min-width: 800px) {
+    .sidebar-right {
+        top: 0;
+    }
 }
 
 .sidebar select {

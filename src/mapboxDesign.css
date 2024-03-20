@@ -1,0 +1,49 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+
+    .map-container {
+        @apply flex w-full h-screen bg-black text-white p-0 relative text-center;
+    }
+
+    .sidebar {
+        @apply absolute flex bg-slate-900/80 text-white px-[6px] py-[6px] top-0 left-0 m-3 rounded z-10;
+    }
+
+    .sidebar-right {
+        @apply absolute flex bg-slate-900/80 text-white px-[6px] py-[6px] top-0 right-0 m-3 rounded z-10;
+    }
+}
+
+.sidebar {
+    background-color: rgb(35 55 75 / 90%);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+}
+
+.sidebar-right {
+    background-color: rgb(35 55 75 / 90%);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px;
+    border-radius: 4px;
+    width: 20rem;
+}
+
+.sidebar select {
+    color: #333;
+}

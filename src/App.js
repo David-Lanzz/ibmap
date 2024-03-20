@@ -1,9 +1,9 @@
-import Map from "./Map.jsx";
+import MapMapbox from "./MapMapbox.tsx"
 
 function App() {
   return (
     <div className="App">
-      <Map />
+      <MapMapbox />
     </div>
   );
 }
